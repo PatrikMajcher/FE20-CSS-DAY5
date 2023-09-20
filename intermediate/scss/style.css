@@ -2,4 +2,42 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(rgb(30, 30, 30), rgb(128, 105, 105));
+  height: 50vh;
+  width: 100vw;
+}
+.hero .text {
+  color: blanchedalmond;
+  padding-left: 15%;
+}
+.hero p {
+  padding-top: 15%;
+  font-size: x-large;
+}
+.hero h1 {
+  padding-left: 15%;
+  font-size: 250%;
+}
+.hero img {
+  height: 100%;
+  width: auto;
+  opacity: 0.5;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  width: 100vw;
+  background-color: blanchedalmond;
+}
+.heading h1 {
+  color: rgb(30, 30, 30);
 }/*# sourceMappingURL=style.css.map */

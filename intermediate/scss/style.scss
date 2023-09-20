@@ -3,3 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@mixin linear-Gradient($fir-color, $sec-color) {
+    background-image: -moz-linear-gradient($fir-color, $sec-color);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($fir-color), to($sec-color));
+    background-image: -webkit-linear-gradient($fir-color, $sec-color);
+    background-image: -o-linear-gradient($fir-color, $sec-color);
+    background-image: linear-gradient($fir-color, $sec-color);
+}
+
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include linear-Gradient(rgb(30, 30, 30), rgb(128, 105, 105));
+    // background-image: linear-gradient(rgb(30, 30, 30), rgb(45, 45, 45));
+    height: 50vh;
+    width: 100vw;
+
+    .text {
+        color: blanchedalmond;
+        padding-left: 15%;
+    }
+
+    p {
+        padding-top: 15%;
+        font-size: x-large;
+    }
+
+    h1 {
+        padding-left: 15%;
+        font-size: 250%;
+    }
+    
+    img {
+        height: 100%;
+        width: auto;
+        opacity: 0.5;
+    }
+}
+
+.heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+    background-color: blanchedalmond;
+
+    h1 {
+        color: rgb(30, 30, 30);
+    }
+}
