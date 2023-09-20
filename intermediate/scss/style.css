@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
